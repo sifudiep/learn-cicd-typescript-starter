@@ -22,6 +22,6 @@ describe("person", () => {
 
 describe("auth", () => {
   test("return ABC123", () => {
-    expect(getAPIKey(headers)).toBe("ABC123");
+    expect(getAPIKey(headers)).toBe("ABC123s");
   });
 });
