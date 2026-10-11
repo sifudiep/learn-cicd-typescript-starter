@@ -43,21 +43,5 @@ jobs:
       - name: Run formatting
         run: npm run format:check
 
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v6
-
-      - name: Set up Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: 22
-
-      - name: Install dependancies
-        run: npm ci
-
       - name: Run lint
         run: npm run lint
